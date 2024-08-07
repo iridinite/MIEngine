@@ -1,13 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="7a28ceda-da3e-4172-b19a-bb9c810046a6" Version="1.0.6" Language="en-US" Publisher="Microsoft" />
-    <DisplayName>Microsoft MI-based Debugger</DisplayName>
-    <Description xml:space="preserve">Provides support for connecting Visual Studio to MI compatible debuggers</Description>
+    <Identity Id="7a28ceda-da3e-4172-b19a-bb9c810046a6" Version="1.0.8" Language="en-US" Publisher="Microsoft" />
+    <DisplayName>Guerrilla MI-based Debugger</DisplayName>
+    <Description xml:space="preserve">Guerrilla edited implementation of LLDB-MI communication protocol</Description>
   </Metadata>
   <Installation InstalledByMsi="false" AllUsers="true">
-    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[15.0, 17.0)" />
-    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0, 17.0)" />
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[17.0, 18.0)">
+      <ProductArchitecture>amd64</ProductArchitecture>
+    </InstallationTarget>
   </Installation>
   <Dependencies>
     <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
